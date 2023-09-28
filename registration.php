@@ -73,30 +73,6 @@ if (isset($_SESSION["user"])) {
 
         }
         ?>
-        <form action="registration.php" method="post">
-            <div class="form-group">
-            <b>Nombre Apellido</b>
-                <input type="text" class="form-control" name="fullname" placeholder="Nombre:">
-            </div>
-            <div class="form-group">
-            <b>Correo</b>
-                <input type="emamil" class="form-control" name="email" placeholder="Correo:">
-            </div>
-            <div class="form-group">
-            <b>Contraseña</b>
-                <input type="password" class="form-control" name="password" placeholder="Contraseña:">
-            </div>
-            <div class="form-group">
-            <b>Repita contraseña</b>
-                <input type="password" class="form-control" name="repeat_password" placeholder="Repita contraseña:">
-            </div>
-            <div class="form-btn">
-                <input type="submit" class="btn btn-primary" value="Registarse" name="submit">
-            </div>
-        </form>
-        <div>
-        <div><p><i>Ya registrada</i> <a href="login.php">Inicia Sesion Aqui</a></p></div>
-      </div>
-    </div>
+        
 </body>
 </html>
