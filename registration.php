@@ -21,7 +21,7 @@ if (isset($_SESSION["user"])) {
 
     <div class="container">
         
-    <h1><b>TIMOTEO CLIENTE</b></h1>
+    <center><h1><b>PAGINA CREADO POR KENYI TIMOTEO</b></h1></center>
         <?php
         if (isset($_POST["submit"])) {
            $fullName = $_POST["fullname"];
@@ -58,7 +58,7 @@ if (isset($_SESSION["user"])) {
             }
            }else{
             
-            $sql = "INSERT INTO users (full_name, email, password) VALUES ( ?, ?, ?, )";
+            $sql = "INSERT INTO users (full_name, email, password) VALUES ( ?, ?, ? )";
             $stmt = mysqli_stmt_init($conn);
             $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
             if ($prepareStmt) {
@@ -75,7 +75,7 @@ if (isset($_SESSION["user"])) {
         ?>
         <form action="registration.php" method="post">
             <div class="form-group">
-            <b>Nombre Apellido</b>
+            <b>Nombre</b>
                 <input type="text" class="form-control" name="fullname" placeholder="Nombre:">
             </div>
             <div class="form-group">
@@ -92,6 +92,7 @@ if (isset($_SESSION["user"])) {
             </div>
             <div class="form-btn">
                 <input type="submit" class="btn btn-primary" value="Registarse" name="submit">
+                
             </div>
         </form>
         <div>
