@@ -19,7 +19,7 @@ if (isset($_SESSION["user"])) {
 <body>
     
     <div class="container">
-    <center><h1><b> PAGINA CREADO POR KENYI TIMOTEO </b></h1></center>
+    <center><h1><b>CLIENTE KENYI TIMOTEO </b></h1></center>
         <?php
         if (isset($_POST["login"])) {
            $email = $_POST["email"];
@@ -42,20 +42,6 @@ if (isset($_SESSION["user"])) {
             }
         }
         ?>
-      <form action="login.php" method="post">
-        <div class="form-group">
-            <b>Ingrese su correo</b>
-            <input type="email" placeholder="Ingrese su correo:" name="email" class="form-control">
-        </div>
-        <div class="form-group">
-            <b>Contraseña</b>
-            <input type="password" placeholder="Ingrese su contraseña:" name="password" class="form-control">
-        </div>
-        <div class="form-btn">
-            <input type="submit" value="Acceso" name="login" class="btn btn-primary">
-        </div>
-      </form>
-     <div><p><i>¿?</i> <a href="registration.php">Registrese Aqui</a></p></div>
-    </div>
+     
 </body>
 </html>
